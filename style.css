@@ -1,0 +1,146 @@
+.label {
+    border-radius: 50%;
+    border: 2px solid darkblue;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    font-family: Verdana;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* transition: all 0.05s; */
+}
+
+#labelForm, #display {
+    font-family: Verdana;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 20px;
+    padding-top: 20px;
+    transition: all 1s;
+    z-index: 3;
+}
+
+#labelForm {
+    color: white;
+    background-color: rgb(0, 0, 100);
+    border: 5px solid rgb(0, 0, 50);
+}
+
+input, textarea, #displayTitle, #displayDescription {
+    background-color:darkblue;
+    border: 2px solid rgb(0, 0, 120);
+    border-radius: 10px;
+    min-height: 30px;
+    min-width: 300px;
+    color: white;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+#displayTitle, #displayDescription {
+    border: none;
+    padding: 10px;
+}
+
+#display {
+    max-width: 50%;
+}
+
+#addLabelBtn, #deleteLabelBtn {
+    border-radius: 10px;
+    min-height: 30px;
+    width: 49%;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type='color'] {
+    cursor: pointer;
+}
+
+.btn {
+    background-color: blue;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: Verdana;
+    color: white;
+    border: 2px solid rgb(0, 0, 120);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(50, 50, 255);
+}
+
+#styleBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+#styleForm {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    font-family: Verdana;
+    color: white;
+    background-color: rgb(0, 0, 100);
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 5px solid rgb(0, 0, 50);
+    font-size: 20px;
+    transition: all 1s;
+}
+
+.close {
+    aspect-ratio: 1;
+    width: 30px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    font: Verdana;
+    font-weight: bolder;
+    background-color: red;
+    border: 0;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: rgb(255, 80, 80);
+}
+
+#closeDisplay {
+    border: 2px solid black;
+}
+
+#presentBtn {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    height: 50px;
+    font-size: 25px;
+}

@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Museum Kiosk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin:0; overflow: hidden;">
+    <canvas id="canvas"></canvas>
+
+    <div id="labelForm">
+        Title: <input id="title" placeholder="[none set]">
+        Description: <textarea id="description" placeholder="[none set]"></textarea>
+        <div id="buttons">
+            <button id="addLabelBtn" class="btn">Add Label</button>
+            <button id="deleteLabelBtn" class="btn">Delete Label</button>
+        </div>
+        <button class="close" id="closeLabel">X</button>
+    </div>
+
+    <div id="display">
+        <br>
+        <div id="displayTitle"></div>
+        <div id="displayDescription"></div>
+        <button class='close' id="closeDisplay">X</button>
+    </div>
+
+    <button id="styleBtn" class="btn">🎨</button>
+
+    <div id="styleForm">
+        Background Colour: <input type="color" id="bgColour">
+        Border Colour: <input type="color" id="borderColour">
+        Border Width: <input type="number" id="borderWidth">
+        Label Radius: <input type="number" id="labelSize">
+        <button id="addStyleBtn" class="btn">Add Styling</button>
+    </div>
+
+    <button id="presentBtn" class="btn">Present</button>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
